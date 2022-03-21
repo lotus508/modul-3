@@ -3,6 +3,11 @@
     button.onclick = function() {
         const product = prompt('Наименование товара', " ");
         const amount = prompt('Количество товара');
+        if (isNaN(amount)) {
+            document.writeln( ' = ошибка, укажите количество числом =');
+            } else {
+                const amount = parseInt(amount) 
+             }
         const category = prompt('Категория товара');
         const price = prompt('Цена товара');
         alert(''+product+'');
