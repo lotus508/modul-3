@@ -3,17 +3,13 @@
     button.onclick = function() {
         const product = prompt('Наименование товара', " ");
         const amount = prompt('Количество товара');
-        if (isNaN(amount)) {
-            document.writeln( ' = ошибка, укажите количество числом =');
-            } else {
-                const amount = parseInt(amount) 
-             }
         const category = prompt('Категория товара');
         const price = prompt('Цена товара');
-        alert(''+product+'');
+        
+        console.log('amount: ', typeof +amount);
+        console.log('price: ', typeof +price);
         console.log('На складе ' + amount + 
         ' единиц товара ' + '\"' + product + '\"' + 
-        ' на сумму ' + 
-        amount * price + ' рублей');
+        ' на сумму ' + amount * price + ' рублей');
     }  
     
