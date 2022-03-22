@@ -1,9 +1,3 @@
-var button = document.querySelector('button');
-
-const speedLight = '3e8';
-
-button.onclick = function() {
-    const myWeight = prompt('Масса тела', " ");
-    
-    console.log('Энергия ' + myWeight * speedLight**2);
-}  
+const myWeight = 92;
+const speedLight = 3e8;
+console.log('Энергия ' + myWeight * speedLight * speedLight);
